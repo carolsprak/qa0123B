@@ -1,16 +1,3 @@
-Skip to content
-carolsprak
-/
-qa1222
-Public
-Code
-Issues
-Pull requests
-More
-Node.js CI - anne
-Update sum.js #5
-Workflow file for this run
-.github/workflows/node.js.yml at 3c34c1a
 name: Node.js CI - anne
 
 on: [push]
@@ -42,4 +29,3 @@ jobs:
           node-version: '18.x'    
       - run: npm install
       - run: npm test
-Update sum.js · carolsprak/qa1222@3c34c1a
