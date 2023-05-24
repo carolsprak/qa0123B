@@ -1,4 +1,4 @@
-name: Node.js CI - anne
+name: Node.js CI
 
 on: [push]
 
