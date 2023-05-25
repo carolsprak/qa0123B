@@ -21,6 +21,7 @@ describe('Calculadora', () => {
 
     test('Verificar se a divisão retorna valores positivos.', () => { 
         expect(calculadora.div(8, 1)).toBe(8);
+        expect(calculadora.div(8, 2)).toBe(4);
     });
 
     test('Verificar se a multiplicacao retorna valores positivos.', () => { 
