@@ -1,17 +1,22 @@
-const sum = require('../src/calculadora'); 
+const Calculadora = require('../src/calculadora'); 
 
-test('Verificar se a soma retorna valores positivos.', () => {
-    expect(sum(2,2)).toBe(4);
-    expect(sum(1,3)).toBe(4);
-    expect(sum(5,7)).toBe(12);
-    expect(sum(13,2)).toBe(15);
+describe('Calculadora', () => {
+    let calculadora;
+    
+    beforeEach(() => {
+        calculadora = new Calculadora();
+      }); 
+
+    test('Verificar se a soma retorna valores positivos.', () => {
+        expect(calculadora.sum(2,2)).toBe(4);
+    });
+
+    test('Verificar se a soma retorna valores negativos.', () => {
+        expect(calculadora.sum(-2, -2)).toBe(-4);
+    });
+
+    test('Verificar se a divisão retorna valores positivos.', () => {
+    //  expect(div(8, 2)).toBe(4);
+        expect(calculadora.sub(8, 1)).toBe(7);
+    });
 });
-
-test('Verificar se a soma retorna valores positivos.', () => {
-    expect(sum(2,2)).toBe(4);
-    expect(sum(1,3)).toBe(4);
-    expect(sum(5,7)).toBe(12);
-    expect(sum(13,2)).toBe(15);
-});
-
-

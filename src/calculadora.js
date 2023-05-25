@@ -1,20 +1,19 @@
-function sum(a, b) {
+ class Calculadora {
+ sum(a, b) {
     return a + b;
   }
-  module.exports = sum;
-/*
-function div(a, b) {
+  
+ div(a, b) {
     return a / b;
   }
-  module.exports = div;
 
-function sub(a, b) {
+ sub(a, b) {
     return a - b;
   }
-  module.exports = sub;
 
-function mult(a, b) {
+ mult(a, b) {
     return a * b;
   }
+}
   
-module.exports = mult;*/
+module.exports = Calculadora ;
