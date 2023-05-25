@@ -3,6 +3,9 @@ function sum(a, b) {
   }
   
   function div(a, b) {
+    if (b === 0) {
+      throw new Error('Divisão por zero!');
+    }
     return a / b;
   }
 

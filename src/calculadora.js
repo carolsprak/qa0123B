@@ -3,7 +3,10 @@
     return a + b;
   }
   
- div(a, b) {
+  div(a, b) {
+    if (b === 0) {
+      throw new Error('Divisão por zero!');
+    }
     return a / b;
   }
 

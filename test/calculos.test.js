@@ -9,6 +9,12 @@ test('Verificar se a soma retorna valores negativos.', () => {
 });
 
 test('Verificar se a divisão retorna valores positivos.', () => {
-//  expect(div(8, 2)).toBe(4);
-    expect(sub(8, 1)).toBe(7);
+    expect(div(8, 2)).toBe(4); 
+    try {
+        expect(div(8, 0)).toBe.error; 
+    } catch (error) {
+        console.log(error.message);
+    }
+    expect(div(-8, 2)).toBe(-4); 
+    
 });
