@@ -7,7 +7,7 @@ describe('Calculadora', () => {
         calculadora = new Calculadora();
       }); 
 
-    test('Verificar se a soma retorna valores positivos.', () => {
+    test('Verificar se a soma retorna  valores positivos.', () => {
         expect(calculadora.sum(2,2)).toBe(4);
     });
 
