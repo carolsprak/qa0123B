@@ -5,7 +5,7 @@ test('Verificar se a soma retorna valores positivos.', () => {
 });
 
 test('Verificar se a soma retorna valores negativos.', () => {
-    expect(sum(-2, -2)).toBe(-4);
+    expect(sum(-2, -2)).toBe(-4); 
 });
 
 test('Verificar se a divisão retorna valores positivos.', () => {
